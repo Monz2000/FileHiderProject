@@ -23,48 +23,32 @@ Follow these steps to set up and run the File Hider application:
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/yourusername/file-hider.git
+
+  ## Usage
+
+- **To hide a file:**  
+  Run the application and provide the full path of the file when prompted. The file will be moved to the `hidden_files` directory, and its metadata will be saved in the database.
+
+- **To unhide a file:**  
+  Run the application and specify the name of the file you want to restore. The file will be retrieved from the `hidden_files` directory and returned to its original location
+  
+## Contributing
+
+- Feel free to fork the repository, make improvements, and submit pull requests. If you have suggestions or encounter issues, please open an issue to discuss them.
+
+## License
+
+- This project does not have a formal license. You are free to use, modify, and distribute the code as you see fit.
+
+## Acknowledgements
+
+- [MySQL JDBC Driver](https://dev.mysql.com/downloads/connector/j/)
+- [Java Documentation](https://docs.oracle.com/javase/8/docs/)
+
+
+
+
    
-2. **Navigate to the Project Directory:**
-```bash
-cd file-hider
-
-3. **Navigate to the Project Directory:**
-
--Create a MySQL database.
--Update the database connection details in FileHider.java. You’ll need to replace placeholders with your actual database credentials
-
-
-4. **Compile the Code:**
-
-```bash
-javac FileHider.java
-
-5. **Run the Application:**
-
-```bash
-java FileHider
-
-### Usage      
--**To hide a file:** Run the application and provide the file path when prompted. The file will be moved to the hidden_files directory, and its metadata will be stored in the database.
--**To unhide a file:** Run the application and specify the file name to restore it from the hidden directory.
--**Example**
--Here's a code snippet showing how to use the hideFile method:
-
-```java
-String filePathToHide = "path/to/yourfile.txt";
-hideFile(filePathToHide, connection);
-
--Replace "path/to/yourfile.txt" with the actual path of the file you want to hide.
-
-### Contributing
-Feel free to fork the repository, make improvements, and submit pull requests. If you have suggestions or encounter issues, please open an issue to discuss them.
-
-### License
-This project does not have a formal license. You are free to use, modify, and distribute the code as you see fit.
-
-### Acknowledgements
-MySQL JDBC Driver
-Java Documentation
 
 
 
